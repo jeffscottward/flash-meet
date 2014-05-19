@@ -11,7 +11,7 @@
     },
     events: {
       toggleMenu: function toggleMenuFunc() {
-        app.slideOutMenu.cache.targetEL.toggleClass('mobile-menu-showing');
+        app.slideOutMenu.cache.targetEL.toggleClass('mobile-menu-left-showing');
       }
     }
   }
