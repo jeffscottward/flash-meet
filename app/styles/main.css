@@ -1,0 +1,137 @@
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+* {
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+body {
+  text-align: center;
+}
+
+.header-nav ul,
+.action-btns-container,
+.people { padding: 0; list-style: none; text-align: justify; font-size: 0; }
+.people { margin: 40px auto; text-align: center; }
+.people li { padding-left: 75%; margin: auto; padding-top: 75%; background: gray; display: none; }
+.people li.showing { display: inline-block; }
+.header-nav ul li,
+.action-btns-container li { display: inline-block; vertical-align: top; width: 33%; font-size:initial; text-align: center; font-size: 25px; }
+.action-btns-container button { border-radius: 50%; border:none; height:100px; width:100px; }
+.header-nav ul li:first-child { text-align: left; }
+.header-nav ul li:last-child  { text-align: right; }
+.action-btns-container li:first-child { text-align: right; }
+.action-btns-container li:last-child  { text-align: left; }
+
+.drawers {
+  background: darkgray;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+body > .drawers,
+body > .container { display: inline-block; vertical-align: top;}
+
+body > .drawers { width: 0%; overflow: hidden; }
+body > .container { width: 100%;  }
+
+body.mobile-menu-showing > .drawers {min-width: 200px; width: 20%;}
