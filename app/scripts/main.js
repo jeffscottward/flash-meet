@@ -20,4 +20,4 @@
     app.slideOutMenu.events.toggleMenu();
   })
 
-})(window.app || {}, jQuery || $);
+})(window.app || {}, jQuery);
